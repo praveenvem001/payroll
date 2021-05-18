@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "microservicesakscluster-59af"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "microservicesakscluster-59af"
+  template:
+    metadata:
+      labels:
+        app: "microservicesakscluster-59af"
+    spec:
+      containers:
+        - name: "microservicesakscluster-59af"
+          image: "mircoservicecontainer.azurecr.io/microservicesakscluster"
+          ports:
+          - containerPort: 80
