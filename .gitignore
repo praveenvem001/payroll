@@ -1,0 +1,7 @@
+/bin/
+.settings/org.springframework.ide.eclipse.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.core.resources.prefs
+.classpath
+.DS_Store
+.project
