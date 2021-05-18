@@ -1,19 +1,19 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "microservicesakscluster-7cd9"
+  name: 'microservicesakscluster-7cd9'
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "microservicesakscluster-7cd9"
+      app: 'microservicesakscluster-7cd9'
   template:
     metadata:
       labels:
-        app: "microservicesakscluster-7cd9"
+        app: 'microservicesakscluster-7cd9'
     spec:
       containers:
-        - name: "microservicesakscluster-7cd9"
-          image: "mircoservicecontainer.azurecr.io/microservicesakscluster"
+        - name: 'microservicesakscluster-7cd9'
+          image: 'mircoservicecontainer.azurecr.io/payroll'
           ports:
-          - containerPort: 80
+            - containerPort: 80
