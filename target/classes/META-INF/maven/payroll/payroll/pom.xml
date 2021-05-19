@@ -15,8 +15,8 @@
 	<name>payroll</name>
 	<description>payroll</description>
 	<properties>
-		<docker.image.prefix>mircoservicecontainer.azurecr.io</docker.image.prefix>
-		<jib-maven-plugin.version>3.0.0</jib-maven-plugin.version>
+		<!-- <docker.image.prefix>mircoservicecontainer.azurecr.io</docker.image.prefix>
+		<jib-maven-plugin.version>3.0.0</jib-maven-plugin.version> -->
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
@@ -56,7 +56,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<artifactId>jib-maven-plugin</artifactId>
 				<groupId>com.google.cloud.tools</groupId>
 				<version>3.0.0</version>
@@ -68,7 +68,7 @@
 						<image>mircoservicecontainer.azurecr.io/payroll</image>
 					</to>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 
