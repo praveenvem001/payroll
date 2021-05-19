@@ -49,6 +49,7 @@
 - "BOOT-INF/lib/spring-webmvc-5.3.6.jar"
 - "BOOT-INF/lib/spring-expression-5.3.6.jar"
 - "BOOT-INF/lib/h2-1.4.200.jar"
+- "BOOT-INF/lib/mysql-connector-java-8.0.23.jar"
 - "BOOT-INF/lib/json-path-2.4.0.jar"
 - "BOOT-INF/lib/json-smart-2.3.jar"
 - "BOOT-INF/lib/accessors-smart-1.2.jar"
