@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "payrollaksdev-d1b8"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "payrollaksdev-d1b8"
+  template:
+    metadata:
+      labels:
+        app: "payrollaksdev-d1b8"
+    spec:
+      containers:
+        - name: "payrollaksdev-d1b8"
+          image: "payrollacr.azurecr.io/payrollaksdev"
+          ports:
+          - containerPort: 8080
