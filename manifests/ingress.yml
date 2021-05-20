@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "payrollaksdev-d1b8"
+    labels:
+        app: "payrollaksdev-d1b8"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: default-payrollaksdev-d1b8.e8c7b5d7b0b44d2d9066.eastus2.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "payrollaksdev-d1b8"
+                servicePort: 8080
